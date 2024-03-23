@@ -1,3 +1,4 @@
+#! /user/bin/env node
 import inquirer from "inquirer";
 const answer = await inquirer.prompt([
     { message: "Enter first number", type: "number", name: "firstNumber" },
@@ -6,7 +7,7 @@ const answer = await inquirer.prompt([
         message: "Select one of the operators to perform operation",
         type: "list",
         name: "operator",
-        choices: ["addition", "subtraction", "multiplication", "division"],
+        choices: ['addition', 'subtraction', 'multiplication', 'division'],
     },
 ]);
 //CONDITION STATEMENT
